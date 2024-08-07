@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <main>
-    <h1>Has encontrado a PEPE el hechicero encriptador</h1>
-    <p>
-        <input type="text" value="Ingrese el texto aqui">
-    </p>
-    <section>
-        <p>aqui sera traducido</p>
+    <main class="presentacion">
+    <section class="presentacion__contenido">
+    <h1 class="presentacion__titulo">Has encontrado a PEPE el hechicero encriptador</h1>
+    <textarea class="presentacion__input" name="input" rows="20" cols="30">Ingrese el texto aqui</textarea>
+    <!--<input class="presentacion__input" type="text" value="Ingrese el texto aqui"> -->
+    <div class="presentacion__botones">
+        <a class="presentacion__botones__link">ENCRIPTAR</a>
+        <a class="presentacion__botones__link">DESENCRIPTAR</a>
+    </div>
     </section>
-    <a>ENCRIPTAR</a>
-    <a>DESENCRIPTAR</a>
+    <div class="cuadro__traduccion">
+        <div class="cuadro__traduccion__texto">
+            <h2 class="cuadro__traduccion__texto__mayor">Ningun mensaje fue encontrado</h2>
+            <p class="cuadro__traduccion__texto__menor">Ingrese el texto que desee encriptar u desencriptar</p>
+        </div>
+        <div class="cuadro__traduccion__imagen">
+        <img src="./assets/pepe.png">
+        </div>
+    </div>
     </main>
-    <footer>
-        <p>CEADO CON CARINIO POR ZAHIR Insfran</p>
+    <footer class="firma">
+        CREADO CON CARINIO POR ZAHIR Insfran
     </footer>
 </body>
 </html>
