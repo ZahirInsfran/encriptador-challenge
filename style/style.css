@@ -34,7 +34,7 @@ body{
 }
 
 .presentacion__input{
-    text-decoration: none;
+    resize: none;
     font-family: var(--fuente-principal);
     font-size: 30px;
     color: #c6ccc2;
@@ -61,11 +61,11 @@ body{
     border-radius: 36px;
     border: 5px solid ;
     border-color: #030302;
-    
+    cursor:pointer;
 }
 
 .cuadro__traduccion{
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color:#362020;
     display: flex;
     width: 500px;
@@ -75,6 +75,14 @@ body{
     border: #aa9348 solid;
 }
 
+.cuadro__del__boton{
+    display: flex;
+    text-align: center;
+    justify-content:start;
+    flex-direction: column-reverse;
+    font-family: var(--fuente-principal);
+    
+}
 .cuadro__traduccion__texto{
     display: flex;
     align-items: center;
@@ -89,6 +97,14 @@ body{
 
 .cuadro__traduccion__texto__menor{
     color: #9a9fa2;
+}
+.cuadro__traduccion__resultado{
+    padding: 5% 5%;
+    font-size: 2rem;
+    align-content: start;
+    text-align: center;
+    display: flex;
+    font-family: var(--fuente-principal);
 }
 .cuadro__traduccion__imagen{
     order: 2;
