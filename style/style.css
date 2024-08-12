@@ -8,6 +8,20 @@
     padding: 0;
     margin: 0;
 }
+
+.cabecera{
+    gap: 6%;
+    align-items: center;
+    display: flex;
+    background-color:#030302;
+    padding: 1%;
+}
+
+.pepe_header{
+    display: flex;
+    width: 3%;;
+}
+
 body{
     background-color: #222141;
     color: #c6ccc2;
@@ -118,7 +132,7 @@ body{
 .cuadro__traduccion__imagen{
     order: 2;
     display: flex;
-
+    justify-content: center;
 }
 
 .cuadro__traduccion__presentacion__boton{
@@ -140,8 +154,12 @@ body{
 }
 
 .firma{
-    color: #222141;
-    background-color:darkkhaki;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+    color:#aa9348;
+    font-size: medium;
+    font-weight: bold;
+    background-color:#030302;
     display: flex;
     text-align: center;
     justify-content: center;
