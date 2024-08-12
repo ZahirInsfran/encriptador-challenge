@@ -10,26 +10,29 @@
     <main class="presentacion">
             <section class="presentacion__contenido">
                 <h1 class="presentacion__titulo">Has encontrado a PEPE el hechicero encriptador</h1>
-                <textarea class="presentacion__input" id="textoDelUsuario" type="text" name="input" rows="20" cols="30">Ingrese el texto aqui</textarea>
+                <textarea class="presentacion__input" id="textoDelUsuario" type="text" name="input" rows="20" cols="30" placeholder="Ingrese su texto aqui"></textarea>
                 <!--<input class="presentacion__input" type="text" value="Ingrese el texto aqui"> -->
                 <div class="presentacion__botones">
                     <button class="presentacion__botones__link" type="submit" onclick="encriptar();" value="textoDelUsuario">ENCRIPTAR</button>
-                    <button class="presentacion__botones__link">DESENCRIPTAR</button>
+                    <button class="presentacion__botones__link" type="submit" onclick="desencriptar();" value="textoDelUsuario" >DESENCRIPTAR</button>
                 </div>
             </section>
-        <div class="cuadro__traduccion" >
-            <p class="cuadro__traduccion__resultado" id="resultado"> ACA ESTA EL TEXTO QUE APARECERIA</p>
-            <section id="cuadro__sinInfo">               
-            <div class="cuadro__traduccion__texto">
-                <h2 class="cuadro__traduccion__texto__mayor">Ningun mensaje fue encontrado</h2>
-                <p class="cuadro__traduccion__texto__menor">Ingrese el texto que desee encriptar u desencriptar</p>
+            <div class="cuadro__traduccion" >
+                <p class="cuadro__traduccion__resultado" id="resultado"> ACA ESTA EL TEXTO QUE APARECERIA</p>
+                
+                <section id="cuadro__sinInfo">               
+                    <div class="cuadro__traduccion__texto">
+                        <h2 class="cuadro__traduccion__texto__mayor">Ningun mensaje fue encontrado</h2>
+                        <p class="cuadro__traduccion__texto__menor">Ingrese el texto que desee encriptar u desencriptar</p>
+                    </div>
+                    <div class="cuadro__traduccion__imagen">
+                        <img src="./assets/pepe.png">
+                    </div>
+                </section>
+                <div class="cuadro__traduccion__presentacion__boton" id="cuadro__boton__copy">
+                    <button id="boton_copiar" class="cuadro__traduccion__boton" type="submit" onclick="copiarTexto();" value="resultado">Copiar</button>
+                </div>
             </div>
-            <div class="cuadro__traduccion__imagen">
-                <img src="./assets/pepe.png">
-            </div>
-            
-            </section>
-        </div>
     </main>
     <footer class="firma">
         CREADO CON CARINIO POR ZAHIR Insfran
