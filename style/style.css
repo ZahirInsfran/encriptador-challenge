@@ -65,7 +65,7 @@ body{
 }
 
 .cuadro__traduccion{
-    justify-content: space-between;
+    /*justify-content: space-between;
     background-color:#362020;
     display: flex;
     width: 500px;
@@ -73,6 +73,15 @@ body{
     flex-direction: column;
     border-radius: 16px;
     border: #aa9348 solid;
+    */
+    justify-content: flex-start;
+    background-color: #362020;
+    display: flex;
+    width: 500px;
+    height: 944px;
+    flex-direction: column;
+    border-radius: 16px;
+    border: #aa9348 solid
 }
 
 .cuadro__del__boton{
@@ -110,6 +119,24 @@ body{
     order: 2;
     display: flex;
 
+}
+
+.cuadro__traduccion__presentacion__boton{
+    display: flex;
+    justify-content: center;
+    padding: 20% 10%;
+}
+
+.cuadro__traduccion__boton{
+    background-color: rgb(125, 65, 43);
+    font-family: var(--fuente-principal);
+    width: 328px;
+    text-align: center;
+    padding: 5% ;
+    border-radius: 36px;
+    border: 5px solid ;
+    border-color: #030302;
+    cursor:pointer;
 }
 
 .firma{
